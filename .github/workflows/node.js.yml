@@ -31,7 +31,7 @@ jobs:
       - run: npm ci
       - run: |
           touch .env
-          echo "${{ secrets.PRODUCTION_ENV_FILE }}" > .env
+          echo "${{ secrets.PRODUCTION_ENV_SECRET }}" > .env
       # Set up Python environment
       - name: Set up Python 3.12.6
         uses: actions/setup-python@v4
